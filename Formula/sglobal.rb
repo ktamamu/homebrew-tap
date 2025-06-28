@@ -2,7 +2,7 @@ class Sglobal < Formula
   desc "AWS Security Group Global Access Scanner"
   homepage "https://github.com/ktamamu/sglobal"
   url "https://github.com/ktamamu/sglobal/archive/v0.1.0.tar.gz"
-  sha256 "YOUR_SHA256_HERE"
+  sha256 "4e0c7ad20b50ed7da63db8d6cb4f0a7ef58995e118da939693c7281f4b1c2195"
   license "MIT"
 
   depends_on "go" => :build
