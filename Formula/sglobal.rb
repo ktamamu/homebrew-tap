@@ -1,7 +1,7 @@
 class Sglobal < Formula
   desc "AWS Security Group Global Access Scanner"
   homepage "https://github.com/ktamamu/sglobal"
-  url "https://github.com/ktamamu/sglobal/archive/v1.0.0.tar.gz"
+  url "https://github.com/ktamamu/sglobal/archive/v0.1.0.tar.gz"
   sha256 "YOUR_SHA256_HERE"
   license "MIT"
 
