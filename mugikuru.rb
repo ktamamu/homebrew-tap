@@ -5,20 +5,20 @@
 class Mugikuru < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.0/mugikuru_Darwin_x86_64.tar.gz"
-      sha256 "946b615b7eeeec7e4beef2a916fa7b8708165e79152a1dc6165e2b2e22a1ebc3"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Darwin_x86_64.tar.gz"
+      sha256 "3128f87b6e4602453096761d2f58f129d7be79e2516adc212e9fdd710fe7c289"
 
       def install
         bin.install "mugikuru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.0/mugikuru_Darwin_arm64.tar.gz"
-      sha256 "8045650ad33d8c8eb160325d40bc3e6a72f8abc0e63957c0c0acefc191e9961d"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Darwin_arm64.tar.gz"
+      sha256 "c48aa1be2ce010b306c26661e6231b663da2bca472d8ec5d69e6ed869062fe07"
 
       def install
         bin.install "mugikuru"
@@ -28,15 +28,15 @@ class Mugikuru < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.0/mugikuru_Linux_x86_64.tar.gz"
-      sha256 "22d9049e744f92f6d9a24540094847b0e7931ad001dd2dc0e5ba418ee5967668"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Linux_x86_64.tar.gz"
+      sha256 "a39eb8182f48ec0df71828915638980b7edcca893607dacf3615e8911daa4f07"
       def install
         bin.install "mugikuru"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.0/mugikuru_Linux_arm64.tar.gz"
-      sha256 "b1b33fba14cad0e901e71c850f21fe2dffd0c7abf755eff1b935318987ec6711"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Linux_arm64.tar.gz"
+      sha256 "b9bf56a1898b7efb342676bf95effbd79828840cc7d1a0642c8b7a2da93f784f"
       def install
         bin.install "mugikuru"
       end
