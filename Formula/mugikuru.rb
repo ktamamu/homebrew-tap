@@ -5,20 +5,20 @@
 class Mugikuru < Formula
   desc ""
   homepage ""
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.1.6/mugikuru_Darwin_x86_64.tar.gz"
-      sha256 "e7ca411719e7cff205288247d93cf8981c781dfcc054d254633245682068ab4e"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Darwin_x86_64.tar.gz"
+      sha256 "9cfe73707e00b090add9cea76c64a1da4b7ecffe5d1dacff0b02698886738a50"
 
       def install
         bin.install "mugikuru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.1.6/mugikuru_Darwin_arm64.tar.gz"
-      sha256 "6129bbeb6a1afe07eca6824f16cef48390f6480aa3e4f96dddaeeb979aa8139c"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Darwin_arm64.tar.gz"
+      sha256 "102907df7e7589d297bd7c380c49d4c32e07632fe88117be89ee2579fbdcc22f"
 
       def install
         bin.install "mugikuru"
@@ -27,24 +27,18 @@ class Mugikuru < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ktamamu/mugikuru/releases/download/v0.1.6/mugikuru_Linux_x86_64.tar.gz"
-        sha256 "935215ae8d32f9e9ee43a10786637cd85ec7af741c370fea02d703023dd6e203"
-
-        def install
-          bin.install "mugikuru"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Linux_x86_64.tar.gz"
+      sha256 "8e7f6a67ace5dc5cc7a059ce432cf86cb6bf4bf00f7f53fb37046c078a3f53c1"
+      def install
+        bin.install "mugikuru"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ktamamu/mugikuru/releases/download/v0.1.6/mugikuru_Linux_arm64.tar.gz"
-        sha256 "563545922b25769023b4bd0a9a22b848255cd5519425bfa0f34e4db09698ee75"
-
-        def install
-          bin.install "mugikuru"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Linux_arm64.tar.gz"
+      sha256 "c120e58fcec2867e2e2842317295a9c34a1d0506fa3627d1ebb7054820c8d486"
+      def install
+        bin.install "mugikuru"
       end
     end
   end
