@@ -5,20 +5,20 @@
 class Mugikuru < Formula
   desc ""
   homepage ""
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Darwin_x86_64.tar.gz"
-      sha256 "3128f87b6e4602453096761d2f58f129d7be79e2516adc212e9fdd710fe7c289"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Darwin_x86_64.tar.gz"
+      sha256 "9cfe73707e00b090add9cea76c64a1da4b7ecffe5d1dacff0b02698886738a50"
 
       def install
         bin.install "mugikuru"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Darwin_arm64.tar.gz"
-      sha256 "c48aa1be2ce010b306c26661e6231b663da2bca472d8ec5d69e6ed869062fe07"
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Darwin_arm64.tar.gz"
+      sha256 "102907df7e7589d297bd7c380c49d4c32e07632fe88117be89ee2579fbdcc22f"
 
       def install
         bin.install "mugikuru"
@@ -27,16 +27,16 @@ class Mugikuru < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Linux_x86_64.tar.gz"
-      sha256 "a39eb8182f48ec0df71828915638980b7edcca893607dacf3615e8911daa4f07"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Linux_x86_64.tar.gz"
+      sha256 "8e7f6a67ace5dc5cc7a059ce432cf86cb6bf4bf00f7f53fb37046c078a3f53c1"
       def install
         bin.install "mugikuru"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/mugikuru/releases/download/v0.2.1/mugikuru_Linux_arm64.tar.gz"
-      sha256 "b9bf56a1898b7efb342676bf95effbd79828840cc7d1a0642c8b7a2da93f784f"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ktamamu/mugikuru/releases/download/v0.3.0/mugikuru_Linux_arm64.tar.gz"
+      sha256 "c120e58fcec2867e2e2842317295a9c34a1d0506fa3627d1ebb7054820c8d486"
       def install
         bin.install "mugikuru"
       end
