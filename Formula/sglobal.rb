@@ -5,21 +5,21 @@
 class Sglobal < Formula
   desc "AWS Security Group Global Access Scanner"
   homepage "https://github.com/ktamamu/sglobal"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "d5bfd57ef27096bbb60595229063d64a655bb601a3d6cc976e2370e9d2c5a498"
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.3/sglobal_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "7999b66898b18e001e0935c5dfc28a7803f473ad9909ec17813dc5f2bca0cb25"
 
       def install
         bin.install "sglobal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "b79b28e327265db8539e726b63da9dd1184208b3b778e31391b0a123c1f742dd"
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.3/sglobal_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "076f768f0fd5921cfbcd2ed0b74a655a0e8a365869bfbc4d8e7aa7d2ee5a133a"
 
       def install
         bin.install "sglobal"
@@ -29,15 +29,15 @@ class Sglobal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "e9c47df785d9589796fb617ab56bdcdce88183378f196b0b79547928852b0f04"
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.3/sglobal_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "499eb7b506917b6bda8bcee2d7e0b2379c6d9c9b0653f1bdb1760a8bc3685697"
       def install
         bin.install "sglobal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Linux_arm64.tar.gz"
-      sha256 "d471f2cdcaef46db34f7e5b49792ba46089b699cfc858dec44e7ebebbab6ed2e"
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.1.3/sglobal_0.1.3_Linux_arm64.tar.gz"
+      sha256 "0132f48ba9d6f4d1bc053028e33f6614cbcc9570a5e13e0743e230758841d095"
       def install
         bin.install "sglobal"
       end
