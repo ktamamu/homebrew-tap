@@ -11,7 +11,7 @@ class Sglobal < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "dcc2f168efc577b8383d6f2007314b688d86e710e442af7cfb80ee3bbb5ebc0d"
+      sha256 "d5bfd57ef27096bbb60595229063d64a655bb601a3d6cc976e2370e9d2c5a498"
 
       def install
         bin.install "sglobal"
@@ -19,7 +19,7 @@ class Sglobal < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "3c7c9789d037162ff60bef7ab9aa0dbddd596f4d47525b5686f170ff91e60303"
+      sha256 "b79b28e327265db8539e726b63da9dd1184208b3b778e31391b0a123c1f742dd"
 
       def install
         bin.install "sglobal"
@@ -30,14 +30,14 @@ class Sglobal < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "84a4ed8088a42788bf716fcf7982659de762de221b058be363e0b43c173e2595"
+      sha256 "e9c47df785d9589796fb617ab56bdcdce88183378f196b0b79547928852b0f04"
       def install
         bin.install "sglobal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ktamamu/sglobal/releases/download/v0.1.2/sglobal_0.1.2_Linux_arm64.tar.gz"
-      sha256 "ebf446e8a3bd5dc11ad6b3177931f9928b403e72a982ff514717754685ef7c68"
+      sha256 "d471f2cdcaef46db34f7e5b49792ba46089b699cfc858dec44e7ebebbab6ed2e"
       def install
         bin.install "sglobal"
       end
