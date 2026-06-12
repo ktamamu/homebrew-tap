@@ -5,23 +5,23 @@
 class Sglobal < Formula
   desc "AWS Security Group Global Access Scanner"
   homepage "https://github.com/ktamamu/sglobal"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.0/sglobal_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "51410589773c26d517e95b70962fd355142326776327ebadb4befb5625addb96"
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.1/sglobal_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "cf8778fb278405f37dd324b3d4f872392c53fa3d2b9187deb78c48050e21b3b8"
 
-      def install
+      define_method(:install) do
         bin.install "sglobal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.0/sglobal_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "0627cef5b57b5ebfc50ac896f616b456e63ce0f63c32d166237b00572ac4eb62"
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.1/sglobal_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "37cd291b1b3d2af7ed7285bee866db0e5efb2db67e45fa9ecb9326739cd9eaae"
 
-      def install
+      define_method(:install) do
         bin.install "sglobal"
       end
     end
@@ -29,16 +29,16 @@ class Sglobal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.0/sglobal_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "5720168b27fa8d8e55d21d52fe9fc40b88bdc7f4f8bd673a08953d7c767e332e"
-      def install
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.1/sglobal_0.2.1_Linux_x86_64.tar.gz"
+      sha256 "c2be019e012c919be1deb96acd7a7a01fdcb3837d7d3ba7b8188e0bb89aaf9cf"
+      define_method(:install) do
         bin.install "sglobal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.0/sglobal_0.2.0_Linux_arm64.tar.gz"
-      sha256 "6c3e83cdf121ec4d495cd1a06bf5562af3e2ef021a8c7b3b203ded88c662d456"
-      def install
+      url "https://github.com/ktamamu/sglobal/releases/download/v0.2.1/sglobal_0.2.1_Linux_arm64.tar.gz"
+      sha256 "f54e3a4657ae5ac4bc143da25c2a8c9db77386844ab25ddb32e935d3a8be13e7"
+      define_method(:install) do
         bin.install "sglobal"
       end
     end
